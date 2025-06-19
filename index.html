@@ -43,12 +43,14 @@
     .nav-links a::after{content:"";position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--clr-text-light);transition:width var(--transition)}
     .nav-links a:hover::after{width:100%}
 
-    /* =========  Hero  ========= */
-    .hero{background:url("public-health.jpg") center/cover no-repeat;min-height:65vh;position:relative;display:flex;align-items:center}
-    .hero::before{content:"";position:absolute;inset:0;background:rgba(17,100,102,0.63)}
-    .hero-content{position:relative;color:var(--clr-text-light);max-width:650px;margin-inline:auto;padding:3rem 1rem;text-align:center}
-    .hero h1{font-size:2.5rem;margin-bottom:1rem;line-height:1.2}
-    .hero p{font-size:1.15rem}
+    /* =========  Hero Image  ========= */
+    .hero{background:url("public-health.jpg") center/cover no-repeat;min-height:40vh;position:relative}
+    .hero::before{content:"";position:absolute;inset:0;background:rgba(17,100,102,0.55)}
+
+    /* =========  Hero Text Below Image  ========= */
+    .hero-text{padding:3rem 1rem;text-align:center}
+    .hero-text h1{font-size:2.5rem;margin-bottom:1rem;color:var(--clr-accent);line-height:1.2}
+    .hero-text p{font-size:1.15rem;max-width:850px;margin-inline:auto;color:var(--clr-text)}
 
     /* =========  Section Headings  ========= */
     section{padding:4rem 0}
@@ -81,7 +83,7 @@
 
     /* =========  Responsive Typography  ========= */
     @media(min-width:768px){
-      .hero h1{font-size:3rem}
+      .hero-text h1{font-size:3rem}
     }
   </style>
 </head>
@@ -99,11 +101,14 @@
     </div>
   </header>
 
-  <!-- =================  Hero  ================= -->
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1> Technical Solutions to Support Public Health Systems</h1>
-      <p>Expert consultancy in disease surveillance, information management, and field epidemiology— to address needs of Public Health Institutions, NGOs, and private organisations worldwide.</p>
+  <!-- =================  Hero Image  ================= -->
+  <section class="hero" id="home"></section>
+
+  <!-- =================  Hero Text  ================= -->
+  <section class="hero-text">
+    <div class="container">
+      <h1>Technical Solutions to Support Public Health Systems</h1>
+      <p>Expert consultancy in disease surveillance, information management, and field epidemiology—to address needs of public‑health institutions, NGOs, and private organisations worldwide.</p>
     </div>
   </section>
 
@@ -151,7 +156,7 @@
         <li>Customised training materials aligned with FETP, CDC, ECDC, and WHO guidelines.</li>
         <li>Field studies, including rapid diagnostic test training for resource‑constrained areas.</li>
         <li>Protocol development and delivery of online/on‑site training programmes.</li>
-        <li>One Health project requiring epidemiological expertise</li>
+        <li>One Health projects requiring epidemiological expertise.</li>
       </ul>
     </div>
   </section>
@@ -173,34 +178,4 @@
         <form id="contactForm" class="contact-form" autocomplete="off">
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="How can we help?" required></textarea>
-          <button type="submit">Send Message</button>
-          <div id="formMessage" style="display:none;margin-top:0.5rem;color:var(--clr-primary-light);"></div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- =================  Footer  ================= -->
-  <footer>
-    <p>&copy; <span id="year"></span> Public Health Solutions. All rights reserved.</p>
-  </footer>
-
-  <!-- =================  Scripts  ================= -->
-  <script>
-    // Dynamic year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Simple client-side form feedback (placeholder only)
-    const form = document.getElementById('contactForm');
-    const formMessage = document.getElementById('formMessage');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      formMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
-      formMessage.style.display = 'block';
-      form.reset();
-    });
-  </script>
-</body>
-</html>
-
+          <textarea name="message
