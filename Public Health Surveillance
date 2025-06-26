@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Public Health Surveillance</title>
+<style>
+body{font-family:Arial, sans-serif;margin:0;padding:20px;line-height:1.6;background:#f7f7f7;}
+header{background:#3f51b5;color:#fff;padding:40px 20px;border-radius:8px;margin-bottom:30px;}
+h1{margin:0;font-size:2.5em;}
+h2.subtitle{margin-top:10px;font-weight:400;font-size:1.3em;}
+section{background:#fff;padding:20px;border-radius:8px;margin-bottom:20px;box-shadow:0 2px 4px rgba(0,0,0,0.1);}
+figure{display:flex;flex-direction:column;align-items:center;margin:0;}
+figcaption{text-align:center;font-style:italic;font-size:0.9em;margin-top:10px;}
+svg text{font-family:Arial, sans-serif;}
+table{width:100%;border-collapse:collapse;margin-top:10px;}
+th,td{border:1px solid #ccc;padding:8px;text-align:left;}
+th{background:#e0e0e0;}
+.cite{font-size:0.9em;color:#555;}
+</style>
+</head>
+<body>
+<header>
+<h1>Public Health Surveillance</h1>
+<h2 class='subtitle'>Foundations, Processes &amp; Global Perspectives</h2>
+</header>
+
+<section id='definition'>
+<h2>Definition</h2>
+<p>Public health surveillance is the <strong>continuous, systematic</strong> collection, analysis and interpretation of health‑related data needed for the planning, implementation and evaluation of public‑health practice, closely integrated with the timely dissemination of these data to those who need to know and linked to public‑health action. <span class='cite'>(WHO 2024; CDC 2024)</span></p>
+</section>
+
+<section id='strategic-objectives'>
+<h2>Strategic Objectives</h2>
+<ol>
+<li><strong>Early detection</strong> of unusual public‑health events and emerging threats.</li>
+<li><strong>Monitoring trends</strong> in disease incidence, prevalence and determinants.</li>
+<li><strong>Guiding interventions</strong> and resource allocation for prevention and control.</li>
+<li><strong>Evaluating impact</strong> of policies and programmes.</li>
+<li><strong>Supporting research</strong> and innovation for healthier populations.</li>
+<li><strong>Enabling global health security</strong> through data sharing and collaboration.</li>
+</ol>
+</section>
+
+<section id='key-steps'>
+<h2>Key Steps in the Surveillance Cycle</h2>
+<figure>
+<svg width='600' height='300' viewBox='0 0 600 300' xmlns='http://www.w3.org/2000/svg' aria-label='Surveillance cycle diagram'>
+  <defs>
+    <marker id='arrow' markerWidth='10' markerHeight='10' refX='5' refY='5' orient='auto' markerUnits='strokeWidth'>
+      <path d='M 0 0 L 10 5 L 0 10 z' fill='#3f51b5'/>
+    </marker>
+    <style>
+      .step{fill:#3f51b5;stroke:#fff;stroke-width:2;}
+      .label{fill:#fff;font-size:13px;text-anchor:middle;dominant-baseline:central;pointer-events:none;}
+      .connector{fill:none;stroke:#3f51b5;stroke-width:2;marker-end:url(#arrow);}    
+    </style>
+  </defs>
+  <!-- Circle positions -->
+  <!-- Top (Data Collection) -->
+  <ellipse class='step' cx='300' cy='60' rx='90' ry='30'/>
+  <text class='label' x='300' y='60'>Data Collection</text>
+  <!-- Right (Analysis) -->
+  <ellipse class='step' cx='510' cy='150' rx='70' ry='30'/>
+  <text class='label' x='510' y='150'>Analysis</text>
+  <!-- Bottom (Interpretation) -->
+  <ellipse class='step' cx='300' cy='240' rx='90' ry='30'/>
+  <text class='label' x='300' y='240'>Interpretation</text>
+  <!-- Left (Dissemination & Action) -->
+  <ellipse class='step' cx='90' cy='150' rx='105' ry='30'/>
+  <text class='label' x='90' y='150' style='font-size:12px;'>Dissemination &amp; Action</text>
+
+  <!-- Arcs / connectors -->
+  <!-- Data Collection -> Analysis -->
+  <path class='connector' d='M 360 75 A 180 180 0 0 1 495 120'/>
+  <!-- Analysis -> Interpretation -->
+  <path class='connector' d='M 525 180 A 180 180 0 0 1 360 225'/>
+  <!-- Interpretation -> Dissemination & Action -->
+  <path class='connector' d='M 240 225 A 180 180 0 0 1 105 180'/>
+  <!-- Dissemination & Action -> Data Collection -->
+  <path class='connector' d='M 75 120 A 180 180 0 0 1 240 75'/>
+</svg>
+<figcaption>Figure&nbsp;1. Continuous surveillance cycle linking data collection, analysis, interpretation and public‑health action (WHO 2024).</figcaption>
+</figure>
+</section>
+
+<section id='types'>
+<h2>Types of Disease Surveillance</h2>
+<table>
+<thead><tr><th>Type</th><th>Description</th><th>Typical Use / Examples</th></tr></thead>
+<tbody>
+<tr><td>Passive</td><td>Routine reporting from healthcare facilities to public‑health authorities.</td><td>National notifiable disease reporting systems.</td></tr>
+<tr><td>Active</td><td>Regular outreach to collect data proactively.</td><td>Outbreak field investigations; special studies.</td></tr>
+<tr><td>Sentinel</td><td>Selected sites report high‑quality, detailed data.</td><td>Influenza‑like illness networks (e.g., ECDC TESSy).</td></tr>
+<tr><td>Laboratory‑based</td><td>Surveillance using laboratory test results.</td><td>Genomic sequencing for SARS‑CoV‑2 variants.</td></tr>
+<tr><td>Syndromic</td><td>Uses pre‑diagnostic symptom data for early warnings.</td><td>Emergency‑department fever surveillance (Africa CDC EBS).</td></tr>
+<tr><td>Event‑based</td><td>Rapid collection and analysis of unstructured information about events.</td><td>Media monitoring for unusual clusters (Gulf CDC media scanning).</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id='references'>
+<h2>References</h2>
+<ol>
+<li>World Health Organization (2024). <em>Surveillance in Emergencies</em>. Retrieved from https://www.who.int/emergencies/surveillance</li>
+<li>Centers for Disease Control and Prevention (2024). <em>Introduction to Public Health Surveillance</em>. Retrieved from https://www.cdc.gov/training-publichealth101</li>
+<li>European Centre for Disease Prevention and Control (2022). <em>Long‑Term Surveillance Framework 2021–2027</em>. Retrieved from https://www.ecdc.europa.eu/</li>
+<li>Africa CDC (2023). <em>Event‑Based Surveillance Training Manual</em>. Retrieved from https://africacdc.org/</li>
+<li>Gulf CDC (2024). <em>Towards a Unified Regional Surveillance System</em>. <em>Frontiers in Public Health</em>. Retrieved from https://www.frontiersin.org/</li>
+<li>McNabb, S. J., German, R. R., Lee, L. M. (2021). <em>Transforming Public Health Surveillance</em>. Elsevier.</li>
+</ol>
+</section>
+
+</body>
+</html>
