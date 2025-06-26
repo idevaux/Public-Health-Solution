@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Information Management</title>
+  <style>
+    :root {
+      --primary: #007acc;
+      --secondary: #f3faff;
+      --text: #222;
+      --bg: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header h2 {
+      margin: 0.5rem 0 0;
+      font-weight: 400;
+      font-size: 1.25rem;
+    }
+
+    main {
+      padding: 1.5rem clamp(1rem, 5vw, 3rem);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h3 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    ol {
+      padding-left: 1.2rem;
+    }
+
+    figure {
+      margin: 1rem auto;
+      text-align: center;
+      max-width: 720px;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 0.3rem;
+    }
+
+    .box {
+      fill: var(--secondary);
+      stroke: var(--primary);
+      stroke-width: 1;
+      rx: 6;
+      ry: 6;
+    }
+
+    .arrow {
+      stroke: #555;
+      stroke-width: 2;
+      marker-end: url(#arrowhead);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Health Information Management</h1>
+    <h2>Strengthening data to protect and improve public health</h2>
+  </header>
+
+  <main>
+    <section id="definition">
+      <h3>Definition</h3>
+      <p>
+        <strong>Health Information Management (HIM)</strong> is the systematic collection, analysis,
+        interpretation and dissemination of data to support evidence-based decision-making across all levels of the
+        health system—from individual patient care through to national policy and global health security. It unites the
+        technical processes of information science with the ethical stewardship of personal and population data,
+        ensuring that the <em>right data</em> reach the <em>right people</em> at the <em>right time</em> while maintaining
+        privacy, quality and security.
+      </p>
+    </section>
+
+    <section id="data-sources">
+      <h3>Key Data Sources for Health Information Management</h3>
+      <ul>
+        <li>
+          Routine health‑facility information systems (electronic medical records, DHIS2, etc.)<sup><a href="#ref2">[2]</a></sup>
+        </li>
+        <li>Population‑based surveys (DHS, MICS, SMART)<sup><a href="#ref2">[2]</a></sup></li>
+        <li>Laboratory information systems and genomic surveillance platforms<sup><a href="#ref3">[3]</a></sup></li>
+        <li>Event‑based and indicator‑based public‑health surveillance<sup><a href="#ref1">[1]</a></sup></li>
+        <li>Vital statistics &amp; civil registration<sup><a href="#ref2">[2]</a></sup></li>
+        <li>Community‑based reporting networks (e.g., IDSR, EWARN)<sup><a href="#ref5">[5]</a></sup></li>
+        <li>Environmental and One Health data streams (vector, climate, animal health)<sup><a href="#ref4">[4]</a></sup></li>
+      </ul>
+    </section>
+
+    <section id="alert-response">
+      <h3>Health Information for Public Health Alert &amp; Response</h3>
+      <p>
+        Timely, high‑quality information is the backbone of the <abbr title="World Health Organization">WHO</abbr>
+        all‑hazards Emergency Framework, enabling rapid detection of events, risk assessment, response coordination and
+        feedback to stakeholders<sup><a href="#ref1">[1]</a></sup>.
+      </p>
+
+      <figure>
+        <svg width="680" height="140" role="img" aria-labelledby="alertDiagramTitle">
+          <title id="alertDiagramTitle">Data flow for real‑time alert and response</title>
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" />
+            </marker>
+          </defs>
+          <!-- Boxes -->
+          <rect x="10" y="50" width="110" height="45" class="box" />
+          <rect x="145" y="50" width="110" height="45" class="box" />
+          <rect x="280" y="50" width="130" height="45" class="box" />
+          <rect x="440" y="50" width="110" height="45" class="box" />
+          <rect x="575" y="50" width="80" height="45" class="box" />
+          <!-- Text -->
+          <text x="65" y="78" text-anchor="middle" font-size="12">Detection</text>
+          <text x="200" y="78" text-anchor="middle" font-size="12">Verification</text>
+          <text x="345" y="78" text-anchor="middle" font-size="12">Risk Assessment</text>
+          <text x="495" y="78" text-anchor="middle" font-size="12">Response</text>
+          <text x="615" y="78" text-anchor="middle" font-size="12">Feedback</text>
+          <!-- Arrows -->
+          <line x1="120" y1="72" x2="145" y2="72" class="arrow" />
+          <line x1="255" y1="72" x2="280" y2="72" class="arrow" />
+          <line x1="410" y1="72" x2="440" y2="72" class="arrow" />
+          <line x1="550" y1="72" x2="575" y2="72" class="arrow" />
+        </svg>
+        <figcaption>Figure&nbsp;1 – Real‑time information flow for the WHO alert‑and‑response cycle.</figcaption>
+      </figure>
+    </section>
+
+    <section id="data-quality">
+      <h3>Core Data‑Quality Principles</h3>
+      <p>
+        The following principles synthesize guidance from WHO, CDC and the ECDC <em>Handbook for data quality and
+        evaluation of surveillance systems</em><sup><a href="#ref2">[2]</a>,<a href="#ref3">[3]</a>,<a href="#ref4">[4]</a></sup>.
+      </p>
+      <ol>
+        <li><strong>Accuracy</strong> – values correctly describe the phenomena measured.</li>
+        <li><strong>Completeness</strong> – expected records, variables and time‑periods are present.</li>
+        <li><strong>Timeliness</strong> – data are available fast enough to inform action.</li>
+        <li><strong>Consistency</strong> – uniform definitions, formats and coding across units and over time.</li>
+        <li><strong>Validity</strong> – adherence to accepted definitions, case classifications and business rules.</li>
+        <li><strong>Integrity &amp; Security</strong> – protection from unauthorized alteration, loss or misuse.</li>
+        <li><strong>Usability &amp; Accessibility</strong> – data are organized and documented so users can find, understand and apply them.</li>
+      </ol>
+    </section>
+
+    <section id="humanitarian">
+      <h3>Health Information Management in Humanitarian Settings</h3>
+      <p>
+        Disasters and conflicts demand agile, interoperable information systems that extend beyond the formal health
+        sector to coordinate multi‑cluster responses through the <abbr title="WHO Health Emergencies Programme">WHE</abbr>
+        architecture<sup><a href="#ref1">[1]</a></sup>.
+      </p>
+
+      <!-- Improved Figure 2 -->
+      <figure>
+        <svg width="620" height="320" role="img" aria-labelledby="humDiagramTitle">
+          <title id="humDiagramTitle">Enhanced information cycle in humanitarian response</title>
+          <defs>
+            <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+              <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+            </marker>
+          </defs>
+          <!-- Background dashed circle -->
+          <circle cx="310" cy="160" r="110" fill="none" stroke="#bbb" stroke-dasharray="6 6" />
+
+          <!-- Node style reused from .box but drawn as circles -->
+          <!-- Node positions (polar) -->
+          <!-- Assessment (top) -->
+          <circle cx="310" cy="50" r="34" class="box" />
+          <text x="310" y="55" text-anchor="middle" font-size="12" dy="12">Assessment</text>
+
+          <!-- Collection -->
+          <circle cx="420" cy="95" r="34" class="box" />
+          <text x="420" y="100" text-anchor="middle" font-size="12" dy="12">Collection</text>
+
+          <!-- Collation -->
+          <circle cx="420" cy="225" r="34" class="box" />
+          <text x="420" y="230" text-anchor="middle" font-size="12" dy="12">Collation</text>
+
+          <!-- Analysis -->
+          <circle cx="310" cy="270" r="34" class="box" />
+          <text x="310" y="275" text-anchor="middle" font-size="12" dy="12">Analysis</text>
+
+          <!-- Sharing -->
+          <circle cx="200" cy="225" r="34" class="box" />
+          <text x="200" y="230" text-anchor="middle" font-size="12" dy="12">Sharing</text>
+
+          <!-- Decision -->
+          <circle cx="200" cy="95" r="34" class="box" />
+          <text x="200" y="100" text-anchor="middle" font-size="12" dy="12">Decision</text>
+
+          <!-- Arrows between nodes following clockwise direction -->
+          <path d="M310 84 A90 90 0 0 1 377 113" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead2)" />
+          <path d="M454 129 A90 90 0 0 1 454 191" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead2)" />
+          <path d="M377 243 A90 90 0 0 1 310 276" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead2)" />
+          <path d="M243 243 A90 90 0 0 1 176 191" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead2)" />
+          <path d="M176 129 A90 90 0 0 1 243 84" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead2)" />
+          <path d="M310 50 v-36" fill="none" stroke="#555" stroke-width="2" marker-end="url(#arrowhead2)" />
+        </svg>
+        <figcaption>Figure&nbsp;2 – Continuous information cycle supporting rapid decision‑making in humanitarian crises (enhanced design).</figcaption>
+      </figure>
+    </section>
+
+    <section id="references">
+      <h3>References</h3>
+      <ol>
+        <li id="ref1">World Health Organization. <em>Alert and Response</em>. Geneva; 2025. Available at: <a href="https://www.who.int/emergencies/alert-and-response" target="_blank" rel="noopener">who.int/emergencies/alert-and-response</a>.</li>
+        <li id="ref2">World Health Organization. <em>Data Quality Review: A toolkit for facility data quality assessment</em>. Geneva; 2017.</li>
+        <li id="ref3">Centers for Disease Control and Prevention. <em>Public Health Surveillance: Data Management &amp; Data Quality Standards</em>. Atlanta; 2020.</li>
+        <li id="ref4">European Centre for Disease Prevention and Control. <em>Handbook for Data Quality and Evaluation of Surveillance Systems</em>. Stockholm; 2019.</li>
+        <li id="ref5">Africa CDC. <em>Integrated Disease Surveillance and Response Technical Guidelines</em>. Addis Ababa; 2023.</li>
+        <li id="ref6">Gulf CDC. <em>GCC Center for Disease Prevention and Control – Concept Note</em>. Riyadh; 2024.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
