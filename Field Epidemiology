@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Field Epidemiology Training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9fafb; color: #111827;}
+    header {background-color: #2563eb; color: #ffffff; padding: 2rem 1rem; text-align: center;}
+    header h1 {margin: 0; font-size: 2.5rem;}
+    header h2 {margin: 0.5rem 0 0; font-size: 1.25rem; font-weight: 300;}
+    main {padding: 2rem 1rem; max-width: 800px; margin: 0 auto;}
+    section {margin-bottom: 2rem;}
+    h3 {color: #2563eb; margin-top: 0;}
+    ul {margin-left: 1.5rem;}
+    a {color: #2563eb; text-decoration: none;}
+    a:hover {text-decoration: underline;}
+    footer {background-color: #f3f4f6; padding: 1rem 1rem; text-align: center; font-size: 0.875rem; color: #4b5563;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Field Epidemiology</h1>
+    <h2>Training for Rapid Public Health Response</h2>
+  </header>
+  <main>
+    <section id="definition">
+      <h3>Definition</h3>
+      <p>Field epidemiology is the application of epidemiologic methods to unexpected health problems when a rapid on–site investigation is necessary for timely public health action.</p>
+    </section>
+
+    <section id="principles">
+      <h3>Principles</h3>
+      <ul>
+        <li>Timeliness – deliver actionable insights quickly.</li>
+        <li>Scientific Rigor – adhere to systematic data collection and analysis.</li>
+        <li>Collaboration – work across disciplines and agencies.</li>
+        <li>Ethical Conduct – protect confidentiality and respect communities.</li>
+        <li>Capacity Building – train workforce for sustainability.</li>
+      </ul>
+    </section>
+
+    <section id="networks">
+      <h3>Field Epidemiology Networks &amp; Associations</h3>
+      <p>Key networks foster collaboration and knowledge sharing:</p>
+      <ul>
+        <li><strong>TEPHINET</strong> – Training Programs in Epidemiology and Public Health Interventions Network.</li>
+        <li><strong>EPIET Alumni Network (EAN)</strong> – Graduates of the European Programme for Intervention Epidemiology Training.</li>
+        <li><strong>Epidemic Intelligence Service (EIS) Alumni Association</strong>.</li>
+        <li><strong>African Field Epidemiology Network (AFENET)</strong>.</li>
+      </ul>
+    </section>
+
+    <section id="resources">
+      <h3>Guidelines &amp; Training Material</h3>
+      <p>Authoritative resources include:</p>
+      <ul>
+        <li><a href="https://www.cdc.gov/eis/index.html" target="_blank" rel="noopener">CDC Epidemic Intelligence Service (EIS)</a></li>
+        <li><a href="https://www.tephinet.org" target="_blank" rel="noopener">Field Epidemiology Training Programs (FETP)</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/epiet" target="_blank" rel="noopener">ECDC – European Programme for Intervention Epidemiology Training (EPIET &amp; EUPHEM)</a></li>
+        <li><a href="https://www.who.int/teams/health-emergency-education" target="_blank" rel="noopener">WHO Health Emergencies Learning Resources</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    © 2025 Field Epidemiology Training Resource Page
+  </footer>
+</body>
+</html>
